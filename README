@@ -1,0 +1,5 @@
+Campainha usando arduino mini pro e modulo de comunicacao sem fio 433 MHz
+
+- primeira versao: forma mais simples possível. Usando biblioteca RadioHead para a comunicação. Funcionamento:
+Tx: quando alimentado, transmite uma mensagem a cada 300ms. Obs.: A opção de implementacao nesta primeira versão foi usar o interruptor tipo campainha para alimentar o circuito, simplificando assim a questão de consumo de energia já que se trata de uma solução alimentada por bateria. O ponto negativo desta solucao é a necessidade de se manter pressionado a chave por uns 2s. Uma segunda versão pretendo usar a chave para acordar o arduino do modo deep sleep e eliminar este problema.
+Rx: quando recebe uma mensagem toca uma música atraves de um buzzer. (obs.: atualmente tocando tema do Mario Bros)
